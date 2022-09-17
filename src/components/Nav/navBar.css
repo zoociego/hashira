@@ -74,7 +74,6 @@ a {
     
 }
 .grid-item {
-    display: block;
     width: 100%;
     height: 100%;
     color: #FFF;
@@ -97,9 +96,6 @@ a {
 
 
 .login {
-    margin: auto;
-    padding: auto;
-    align-items: center;
     color: rgb(213, 211, 211);
     transition: 0.3s;
 }
@@ -107,6 +103,7 @@ a {
 .login:hover{
     color: #FFF;
 }
+
 
 .sound {
     /* border: 1px solid #fff; */

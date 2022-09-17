@@ -1,9 +1,10 @@
 import './navBar.css';
+import theme from '../../assets/theme.mp3'
 import logo from '../../assets/probando.png'
 import logo2 from '../../assets/probando2.png'
 import volume from '../../assets/volume.png'
 import mute from '../../assets/mute.png'
-import { TbUserCircle } from 'react-icons/tb'
+import { AiOutlineUser } from 'react-icons/ai'
 import { BsDownload } from 'react-icons/bs'
 
 const Home = () => {
@@ -16,13 +17,19 @@ const Home = () => {
         let img = document.getElementById('img')
         img.setAttribute('src', logo) 
     }
+
     const volumeChanger = () => {
+        let audio = document.getElementById('theme')
         let volumeValue = document.getElementById('volume')
         let volumeSrc = volumeValue.getAttribute('src')
         if(volumeSrc === volume) {
             volumeValue.setAttribute('src', mute)
+            audio.volume = 0;
         }else {
             volumeValue.setAttribute('src', volume)
+            audio.play()
+            audio.volume = 1;
+            audio.setAttribute('loop', '')
         }
     }
 
@@ -30,8 +37,12 @@ const Home = () => {
         <header className='container'>
             <nav >
                 <ul>
+                <audio id="theme">
+                    <source src={theme} type="audio/mp3"/>
+                    Your browser does not support the audio element.
+                </audio>
                     <li><img
-                            src={volume} 
+                            src={mute} 
                             id='volume'
                             name='volume'
                             onClick={volumeChanger}
@@ -57,7 +68,7 @@ const Home = () => {
             <div className='grid-container '>
 
                 <a className='grid-item login'  href="">
-                    Login <TbUserCircle />
+                    Login <AiOutlineUser  />
                 </a>
 
                 <a  className='grid-item download' 

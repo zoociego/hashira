@@ -5,8 +5,7 @@ const Layout = () => {
     return(
         <div>
             <video loop autoPlay muted className='video'>
-                <source 
-                    src={video}/>
+                <source src={video}/>
             </video>
         </div>
     )
