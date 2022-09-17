@@ -39,14 +39,14 @@ const Home = () => {
             </nav>
             <div className='grid-container '>
 
-                <a className='grid-item'  href="">
+                <a className='grid-item login'  href="">
                     Login <TbUserCircle />
                 </a>
 
-                <button className='grid-item btn' 
+                <a  className='grid-item btn' 
                    href="https://drive.google.com/u/0/uc?id=1x3W6W9N0MD19-rNzbCCmFVj3j5X3vSKY&export=download&confirm=t&uuid=05abb873-5ef0-41fa-b496-b158cc0a9"
-                >Download <BsDownload/></button>
-
+                >Download <BsDownload /></a>
+            
             </div>
         </header>
     )

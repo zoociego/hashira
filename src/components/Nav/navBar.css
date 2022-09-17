@@ -22,6 +22,7 @@ a {
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
 }
 
 .logo {
@@ -59,26 +60,49 @@ a {
 
 .grid-container {
     /* border: 3px solid #FFF; */
-    position: relative;
+    position: inherit;
     color: #FFF;
     display: grid;
-    grid-template-columns: 10rem 10rem;
-    margin-left: rem;
+    grid-template-columns: 15rem 13rem;
+    height: 100%;
+    top: 0;
+    right: 0;
     
 }
 .grid-item {
+    display: block;
     width: 100%;
     height: 100%;
-    margin-top: 0;
     color: #FFF;
+    font-size: large;
+    padding-top: 2rem;
+    text-align: center;
     text-decoration: none;
     /* border: 3px solid #FFF; */
 }
 
 .btn {
-    cursor: pointer;
-    background-color: black;
+    transition: border-color 0.2s, background-color 0.2s, color 
 }
+
+.btn:hover {
+    background-color: #fff;
+    border-color: transparent;
+    color: #444;
+}
+
+
+.login {
+    margin: auto;
+    padding: auto;
+    align-items: center;
+    color: rgb(213, 211, 211);
+}
+
+.login:hover{
+    color: #FFF;
+}
+
 
 
 
