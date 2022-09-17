@@ -1,24 +1,41 @@
 import './navBar.css';
 import logo from '../../assets/probando.png'
 import logo2 from '../../assets/probando2.png'
+import volume from '../../assets/volume.png'
+import mute from '../../assets/mute.png'
 import { TbUserCircle } from 'react-icons/tb'
 import { BsDownload } from 'react-icons/bs'
 
 const Home = () => {
 
-    const imgHover = () => {
+    const logoHover = () => {
         let img = document.getElementById('img')
             img.setAttribute('src', logo2)
     }
-    const normalImg = () => {
-        let img = document.querySelector('#img')
+    const normalLogo = () => {
+        let img = document.getElementById('img')
         img.setAttribute('src', logo) 
+    }
+    const volumeChanger = () => {
+        let volumeValue = document.getElementById('volume')
+        let volumeSrc = volumeValue.getAttribute('src')
+        if(volumeSrc === volume) {
+            volumeValue.setAttribute('src', mute)
+        }else {
+            volumeValue.setAttribute('src', volume)
+        }
     }
 
     return(
         <header className='container'>
             <nav >
                 <ul>
+                    <li><img
+                            src={volume} 
+                            id='volume'
+                            name='volume'
+                            onClick={volumeChanger}
+                            /></li>
                     <li > <a  href="">
                                 <img
                                     id='img'
@@ -26,9 +43,9 @@ const Home = () => {
                                     src={logo} 
                                     alt="Hashira Logo"  
                                     className='logo'
-                                    onMouseOver={imgHover} 
-                                    onMouseOut={normalImg}/>
-                        </a> 
+                                    onMouseOver={logoHover} 
+                                    onMouseOut={normalLogo}
+                        /></a> 
                     </li>
                     <li> <a className='hover-underline-animation' href="">News</a> </li>
                     <li> <a className='hover-underline-animation' href="">Playguide</a> </li>
@@ -43,7 +60,7 @@ const Home = () => {
                     Login <TbUserCircle />
                 </a>
 
-                <a  className='grid-item btn' 
+                <a  className='grid-item download' 
                    href="https://drive.google.com/u/0/uc?id=1x3W6W9N0MD19-rNzbCCmFVj3j5X3vSKY&export=download&confirm=t&uuid=05abb873-5ef0-41fa-b496-b158cc0a9"
                 >Download <BsDownload /></a>
             
