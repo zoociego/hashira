@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'HYWenHei-85W';
+  src: url('./Fonts/HYWenHei-HEW.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'HYWenHei-85W' /* ,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif */;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'HYWenHei-85W' /* ,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace */;
+}
+button {
+  font-family: 'HYWenHei-85W'
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
