@@ -1,16 +1,21 @@
 import './App.css';
-import NavBar from './components/Nav/navBar.jsx';
-import Layout from './components/Layout/Layout.jsx'
-import music from './assets/theme.mp3'
-
+import Home from './components/Home/Home.jsx'
+import Login from './components/Login/Login.jsx'
+import {
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <audio src={music} autoPlay loop/>
-      <Layout />
-      <NavBar />
-    </div>
+      <div>
+        <Routes>
+          <Route path='/Login' element={<Login />}>
+          </Route>
+          <Route path='/' element={<Home />}>
+          </Route>
+        </Routes>
+      </div>
   );
 }
 
