@@ -8,6 +8,7 @@ import { AiOutlineUser } from 'react-icons/ai'
 import { BsDownload } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
 import Login from '../../Login/Login.jsx';
+import Register from '../../Login/Register';
 
 const Home = () => {
 
@@ -33,10 +34,6 @@ const Home = () => {
             audio.volume = 1;
             audio.setAttribute('loop', '')
         }
-    }
-
-    function displayRemover() {
-        document.removeProperty("Form")[0].style.display = "none";
     }
 
     return(
@@ -74,8 +71,8 @@ const Home = () => {
                 </nav>
             <div className='grid-container '>
             
-                <a to='' className='grid-item box-effect' onClick={displayRemover}>
-                    Login <AiOutlineUser  />
+                <a to='' className='grid-item box-effect'>
+                    Login <AiOutlineUser />
                 </a>
 
                 <a  className='grid-item box-effect' 
@@ -85,6 +82,7 @@ const Home = () => {
             </div>
     </header>
     <Login />
+    <Register />
     </>
 )}
 
