@@ -84,26 +84,16 @@ a {
     /* border: 1px solid #FFF; */
 }
 
-.download {
-    transition: background-color 0.3s 
+.box-effect {
+    transition: background-color 0.3s;
+    cursor: pointer;
 }
 
-.download:hover {
+.box-effect:hover {
     background-color: #fff;
     border-color: transparent;
     color: #444;
 }
-
-
-.login {
-    color: rgb(213, 211, 211);
-    transition: 0.3s;
-}
-
-.login:hover{
-    color: #FFF;
-}
-
 
 .sound {
     /* border: 1px solid #fff; */

@@ -7,6 +7,7 @@ import mute from '../../../assets/mute.png'
 import { AiOutlineUser } from 'react-icons/ai'
 import { BsDownload } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
+import Login from '../../Login/Login.jsx';
 
 const Home = () => {
 
@@ -34,7 +35,12 @@ const Home = () => {
         }
     }
 
+    function displayRemover() {
+        document.removeProperty("Form")[0].style.display = "none";
+    }
+
     return(
+        <>
         <header className='container'>
                 <nav >
                     <ul>
@@ -67,17 +73,19 @@ const Home = () => {
                     </ul>
                 </nav>
             <div className='grid-container '>
-
-                <Link to='/Login' className='grid-item login'  href="">
+            
+                <a to='' className='grid-item box-effect' onClick={displayRemover}>
                     Login <AiOutlineUser  />
-                </Link>
+                </a>
 
-                <a  className='grid-item download' 
+                <a  className='grid-item box-effect' 
                    href="https://drive.google.com/u/0/uc?id=1x3W6W9N0MD19-rNzbCCmFVj3j5X3vSKY&export=download&confirm=t&uuid=05abb873-5ef0-41fa-b496-b158cc0a9"
                 >Download <BsDownload /></a>
 
             </div>
     </header>
+    <Login />
+    </>
 )}
 
 export default Home
