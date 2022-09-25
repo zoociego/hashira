@@ -1,12 +1,12 @@
 import './Login.css';
 import { AiOutlineClose } from 'react-icons/ai'
 
-const Login = () => {
+const Login = (props) => {
     return(
     <>
         <div className='ContainerPrincipal'>
             <div className='ContainerSecundario'>
-            <AiOutlineClose className="exit"/>
+            <AiOutlineClose className="exit" onClick={props.handleClickLogin}/>
                 <form action='../Home.jsx' className="Form" method="post">
                     <p className="Login">Iniciar sesión</p>
                     <input type="text" className="User input" placeholder='Username' />
@@ -16,7 +16,11 @@ const Login = () => {
                         <br />
                         <br />
                         <a className="rememberpw" href='/'>Forgot your password</a>
-                        <a className="Register">Register</a>
+                        <a 
+                            className="Register" 
+                            onClick={props.handleClickRegister}
+                            >Register
+                        </a>
                     </div>
                 </form>
             </div>

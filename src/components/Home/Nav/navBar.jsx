@@ -1,77 +1,97 @@
 import './navBar.css';
-import theme from '../../../assets/theme.mp3'
-import logo from '../../../assets/probando.png'
-import logo2 from '../../../assets/probando2.png'
-import volume from '../../../assets/volume.png'
-import mute from '../../../assets/mute.png'
+import navBarObjects from './navBarObjects.jsx';
+import { useState } from 'react';
 import { AiOutlineUser } from 'react-icons/ai'
 import { BsDownload } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
-import Login from '../../Login/Login.jsx';
-import Register from '../../Login/Register';
+import Login from '../Login/Login.jsx';
+import Register from '../Register/Register';
 
-const Home = () => {
+const NavBar = () => {
 
-    const logoHover = () => {
-        let img = document.getElementById('img')
-            img.setAttribute('src', logo2)
-    }
-    const normalLogo = () => {
-        let img = document.getElementById('img')
-        img.setAttribute('src', logo) 
-    }
+    const [handleLogin, setHandleLogin] = useState(false);
 
-    const volumeChanger = () => {
-        let audio = document.getElementById('theme')
-        let volumeValue = document.getElementById('volume')
-        let volumeSrc = volumeValue.getAttribute('src')
-        if(volumeSrc === volume) {
-            volumeValue.setAttribute('src', mute)
-            audio.volume = 0;
-        }else {
-            volumeValue.setAttribute('src', volume)
-            audio.play()
-            audio.volume = 1;
-            audio.setAttribute('loop', '')
-        }
-    }
+    const handleClickLogin = () => {
+        setHandleLogin(current => !current);
+    };
+
+    const [handleRegister, setHandleRegister] = useState(false);
+
+    const handleClickRegister = (event) => {
+        setHandleRegister(current => !current);
+        handleClickLogin()
+    };
 
     return(
         <>
         <header className='container'>
                 <nav >
-                    <ul>
+                    <ul className='ul-navBar'>
                     <audio id="theme">
-                        <source src={theme} type="audio/mp3"/>
+                        <source src={navBarObjects.theme} type="audio/mp3"/>
                         Your browser does not support the audio element.
                     </audio>
-                        <li ><img
-                                src={mute} 
+                        <li className='li-navBar'>
+                            <img
+                                src={navBarObjects.mute} 
                                 id='volume'
                                 name='volume'
-                                onClick={volumeChanger}
-                                /></li>
-                        <li > <Link  to="/">
+                                onClick={navBarObjects.volumeChanger}
+                                />
+                        </li>
+                        <li className='li-navBar'> 
+                            <Link  to="/">
                                     <img
                                         id='img'
                                         name='img'
-                                        src={logo} 
+                                        src={navBarObjects.logo} 
                                         alt="Hashira Logo"  
                                         className='logo'
-                                        onMouseOver={logoHover} 
-                                        onMouseOut={normalLogo}
-                            /></Link> 
+                                        onMouseOver={navBarObjects.logoHover} 
+                                        onMouseOut={navBarObjects.normalLogo}
+                                    />
+                            </Link> 
                         </li>
-                        <li> <Link to='/Rankeds' className='hover-underline-animation'>Rankeds</Link> </li>
-                        <li> <Link to='/Playguide' className='hover-underline-animation'>Playguide</Link> </li>
-                        <li> <Link to='/Game' className='hover-underline-animation'>Game</Link> </li>
-                        <li> <Link to='/Donation' className='hover-underline-animation'>Donation</Link> </li>
-                        <li> <Link to='/Support' className='hover-underline-animation'>Support</Link> </li>
+                        <li className='li-navBar'> 
+                            <Link 
+                                to='/Rankeds' 
+                                className='hover-underline-animation'
+                                >Rankeds
+                            </Link> 
+                        </li>
+                        <li className='li-navBar'> 
+                            <Link 
+                                to='/Playguide' 
+                                className='hover-underline-animation'
+                                >Playguide
+                            </Link> 
+                        </li>
+                        <li className='li-navBar'> 
+                            <Link 
+                                to='/Game' 
+                                className='hover-underline-animation'
+                                >Game
+                            </Link> 
+                        </li>
+                        <li className='li-navBar'> 
+                            <Link 
+                                to='/Donation' 
+                                className='hover-underline-animation'
+                                >Donation
+                            </Link> 
+                        </li>
+                        <li className='li-navBar'> 
+                            <Link 
+                                to='/Support' 
+                                className='hover-underline-animation'
+                                >Support
+                            </Link> 
+                        </li>
                     </ul>
                 </nav>
             <div className='grid-container '>
             
-                <a to='' className='grid-item box-effect'>
+                <a className='grid-item box-effect' onClick={handleClickLogin}>
                     Login <AiOutlineUser />
                 </a>
 
@@ -81,9 +101,12 @@ const Home = () => {
 
             </div>
     </header>
-    <Login />
-    <Register />
+    {handleLogin && <Login 
+                        handleClickLogin={handleClickLogin} 
+                        handleClickRegister={handleClickRegister}
+    />}
+    {handleRegister && <Register handleClickRegister={handleClickRegister} />}
     </>
 )}
 
-export default Home
+export default NavBar;

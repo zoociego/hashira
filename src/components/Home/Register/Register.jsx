@@ -2,12 +2,12 @@ import './Register.css';
 import { AiOutlineClose } from 'react-icons/ai'
 
 
-const Register = () => {
+const Register = (props) => {
     return(
     <>
         <div className='ContainerP'>
             <div className='ContainerS'>
-            <AiOutlineClose className="salir" />
+            <AiOutlineClose className="exit" onClick={props.handleClickRegister}/>
                 <form action='../Home.jsx' className="FormR" method="post">
                     <p className="Registro">Registro</p>
                     <input type="text" className="usuario input" placeholder='Username' />
