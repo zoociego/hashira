@@ -5,8 +5,8 @@
     display: flex;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .grid-container {
