@@ -1,5 +1,5 @@
 import './navBar.css';
-import navBarObjects from './navBarObjects.jsx';
+import Utils from './navBarUtils.jsx';
 import { useState } from 'react';
 import { AiOutlineUser } from 'react-icons/ai'
 import { BsDownload } from 'react-icons/bs'
@@ -28,15 +28,16 @@ const NavBar = () => {
                 <nav >
                     <ul className='ul-navBar'>
                     <audio id="theme">
-                        <source src={navBarObjects.theme} type="audio/mp3"/>
+                        <source src={Utils.theme} type="audio/mp3"/>
                         Your browser does not support the audio element.
                     </audio>
                         <li className='li-navBar'>
                             <img
-                                src={navBarObjects.mute} 
+                                src={Utils.mute} 
                                 id='volume'
                                 name='volume'
-                                onClick={navBarObjects.volumeChanger}
+                                alt='volume img'
+                                onClick={Utils.volumeChanger}
                                 />
                         </li>
                         <li className='li-navBar'> 
@@ -44,11 +45,11 @@ const NavBar = () => {
                                     <img
                                         id='img'
                                         name='img'
-                                        src={navBarObjects.logo} 
+                                        src={Utils.logo} 
                                         alt="Hashira Logo"  
                                         className='logo'
-                                        onMouseOver={navBarObjects.logoHover} 
-                                        onMouseOut={navBarObjects.normalLogo}
+                                        onMouseOver={Utils.logoHover} 
+                                        onMouseOut={Utils.normalLogo}
                                     />
                             </Link> 
                         </li>
@@ -91,9 +92,13 @@ const NavBar = () => {
                 </nav>
             <div className='grid-container '>
             
-                <a className='grid-item box-effect' onClick={handleClickLogin}>
+                <button 
+                    className='grid-item box-effect loginButton' 
+                    onClick={handleClickLogin}
+
+                >
                     Login <AiOutlineUser />
-                </a>
+                </button>
 
                 <a  className='grid-item box-effect' 
                    href="https://drive.google.com/u/0/uc?id=1x3W6W9N0MD19-rNzbCCmFVj3j5X3vSKY&export=download&confirm=t&uuid=05abb873-5ef0-41fa-b496-b158cc0a9"

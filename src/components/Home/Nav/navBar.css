@@ -75,6 +75,13 @@
         transform-origin: bottom left;
     }
 
+.loginButton {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    padding: 1rem
+}
+
 .box-effect {
     transition: background-color 0.3s;
     cursor: pointer;

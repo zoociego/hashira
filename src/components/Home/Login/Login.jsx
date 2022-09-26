@@ -16,11 +16,11 @@ const Login = (props) => {
                         <br />
                         <br />
                         <a className="rememberpw" href='/'>Forgot your password</a>
-                        <a 
+                        <button 
                             className="Register" 
                             onClick={props.handleClickRegister}
                             >Register
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>

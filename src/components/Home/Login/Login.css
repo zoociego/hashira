@@ -67,6 +67,8 @@
 }
 
 .Register {
+    background-color: transparent;
+    border: none;
     float: right;
     text-decoration: none;
     color: white;

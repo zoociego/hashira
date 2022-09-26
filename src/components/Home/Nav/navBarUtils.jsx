@@ -28,14 +28,15 @@ const volumeChanger = () => {
         audio.setAttribute('loop', '')
     }
 }
-
-export default {
+    
+const Utils = {
     theme,
     logo,
-    logo2,
     volume,
     mute,
     logoHover,
     normalLogo,
     volumeChanger
-}
+} 
+
+export default Utils;
