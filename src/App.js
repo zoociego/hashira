@@ -1,4 +1,3 @@
-import './App.css';
 import Home from './components/Home/Home.jsx'
 import {
   Routes,
@@ -6,13 +5,15 @@ import {
 } from "react-router-dom";
 
 function App() {
-  return (
-      <div>
+    return (
+      <>
         <Routes>
-          <Route path='/' element={<Home />}>
+          <Route 
+            path='/' 
+            element={<Home />}>
           </Route>
-        </Routes>
-      </div>
+        </Routes> 
+      </>
   );
 }
 

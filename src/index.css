@@ -1,11 +1,10 @@
 @font-face {
   font-family: 'HYWenHei-85W';
-  src: url('./Fonts/HYWenHei-HEW.ttf') format('truetype');
+  src: url('../public/Fonts/HYWenHei-HEW/HYWenHei-HEW.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
 
 * {
   padding: 0;

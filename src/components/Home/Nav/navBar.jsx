@@ -1,5 +1,5 @@
 import './navBar.css';
-import Utils from './navBarUtils.jsx';
+import Utils from '../../../utils/Utils.jsx';
 import { useState } from 'react';
 import { AiOutlineUser } from 'react-icons/ai'
 import { BsDownload } from 'react-icons/bs'

@@ -1,9 +1,11 @@
-import theme from '../../../assets/theme.mp3'
-import logo from '../../../assets/probando.png'
-import logo2 from '../../../assets/probando2.png'
-import volume from '../../../assets/volume.png'
-import mute from '../../../assets/mute.png'
+import theme from '../assets/theme.mp3'
+import logo from '../assets/probando.png'
+import logo2 from '../assets/probando2.png'
+import volume from '../assets/volume.png'
+import mute from '../assets/mute.png'
 
+
+//Utils for Navbar
 
 const logoHover = () => {
     let img = document.getElementById('img')
@@ -28,7 +30,11 @@ const volumeChanger = () => {
         audio.setAttribute('loop', '')
     }
 }
-    
+ 
+//Utils for LoadDisplay
+
+
+
 const Utils = {
     theme,
     logo,

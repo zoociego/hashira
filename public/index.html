@@ -5,7 +5,9 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link rel="prefecth" href="HYWenHei-HEW.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="./pageLoading.css">
+    <link rel="prefecth" href="./Fonts/HYWenHei-HEW/HYWenHei-HEW.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./Fonts/ElementsFonts/Icon-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -15,6 +17,12 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="container">
+        <div id='loading' class="loading" >
+          <p qwtr="qwtr" class="letters">qwtr</p>  
+        </div>
+    </div>
     <div id="root"></div>
+    <script src="./pageLoading.js" type="text/javascript"></script>
   </body>
 </html>
