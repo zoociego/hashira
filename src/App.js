@@ -1,4 +1,5 @@
 import Home from './components/Home/Home.jsx'
+import News from './components/Home/News/News.jsx'
 import {
   Routes,
   Route
@@ -11,6 +12,10 @@ function App() {
           <Route 
             path='/' 
             element={<Home />}>
+          </Route>
+          <Route 
+            path='/News' 
+            element={<News/>}>
           </Route>
         </Routes> 
       </>

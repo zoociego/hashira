@@ -1,0 +1,155 @@
+.ContenedorPrincipal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Microsoft YaHei', 微软雅黑, 'MicrosoftJhengHei', 华文细黑, STHeiti, MingLiu;
+
+}
+
+.ContenedorSecunario {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 30rem 30rem 30rem;
+    grid-gap: 2rem;
+    
+}
+
+.Containers {
+    padding: 2rem;
+    padding-top: 2rem;
+    background-color: rgba(18,18,18,0.8);
+    border-radius: 4px;
+    opacity: 0.9;
+}
+
+.Noticebg {
+    transition: all 0.5s 0s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.ContainerImage {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.h3 {
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 34px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    max-height: 70px;
+    margin: 10px 0;
+}
+
+.body {
+    font-size: 1.01rem;
+    line-height: 1.5rem;
+    color: #fff;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.Foot {
+    text-align: center;
+}
+
+.date {
+    color: #808080;
+    float: left;
+    
+}
+
+.Notice {
+    color: #ffc000;
+    float: right;
+}
+
+.categoryBox { 
+    
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 14rem 14rem 14rem;
+    grid-gap: 2rem;
+}
+
+.Category {
+    line-height: 2.5rem;
+    background-color: rgba(57,59,64,0.18);
+    color: #393b40;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    padding: 1px;
+    transition: all 0.2s 0s ease;
+}
+
+.bgbox {
+    background-color: #f5f5f5;
+    height: 2rem;
+}
+
+.news {
+    position: relative;
+    min-height: 170px;
+    background-color: #fafafa;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.newsContent{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: #393b40;
+    background-color: #ffffff;
+}
+
+.newsImg {
+    width: 265px;
+    height: 140px;
+    margin-right: 20px;
+}
+
+.newsInfo {
+    width: calc(100% - 285px);
+}
+
+.newsDate {
+    position: absolute;
+    
+    bottom: 16px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.newsDate div {
+    color: #999;
+}
+
+.newsDate a {
+    width: auto;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 56px;
+    color: #ffc000;
+}
+
