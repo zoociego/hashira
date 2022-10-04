@@ -3,8 +3,8 @@ import video from '../../../assets/example.webm'
 
 const Layout = () => {
     return(
-        <div>
-            <video loop autoPlay muted className='video'>
+       <div className='Layout-Container'>
+            <video loop autoPlay muted className='video-Layout'>
                 <source src={video}/>
             </video>
         </div>

@@ -1,4 +1,8 @@
-.video {
+.video-Layout {
     width: 100%;
     height: 99.5vh;
+}
+
+.Layout-Container {
+    height: 99.53vh;
 }
