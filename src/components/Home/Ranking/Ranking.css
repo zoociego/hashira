@@ -1,0 +1,36 @@
+.Rank-Container {
+    margin-top: -0.3rem;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.Rank-ChildContainer {
+    height: 30vh;
+    width: 100%;
+    overflow:hidden;
+    transition: .3s ease;
+}
+
+.Rank-ChildContainer:hover{
+    border: .5rem solid white;
+}
+
+.Rank-Section {
+    background-image: url('../../../../public/forest.jpg');
+    background-size: cover;
+    transition: all .5s ease;
+    text-align: center;
+    padding: 6rem;
+}
+
+.Rank-Section:hover { 
+    transform: scale(1.2);
+}
+
+.Rank-Name {
+    display: inline-block;
+    font-size: 3rem;
+    color: black;
+    border: 1px solid black;
+}
