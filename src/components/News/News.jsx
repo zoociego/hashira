@@ -1,5 +1,5 @@
-import NavBar from '../Nav/navBar.jsx';
-import Layout from '../Layout/Layout.jsx'
+import NavBar from '../Home/Nav/navBar.jsx';
+import Layout from '../Home/Layout/Layout.jsx';
 import './News.css';
 
 const News = () => {
