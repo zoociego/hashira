@@ -1,0 +1,32 @@
+.Footer-Container {
+    border: 2px solid black;
+    height: 32vh;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 1rem;
+}
+
+.Footer-Logo {
+    width: 10rem;
+}
+
+.Information-Buttons {
+    display: inline-block;
+    margin-top: .5rem;
+    padding: 1rem;
+}
+
+.Information-Buttons-text {
+    margin: 1rem;
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+}
+
+.Information-Buttons-text:hover {
+    color: white;
+}
+
+.Game-Information-Text {
+    color: rgb(168, 168, 168);
+}
