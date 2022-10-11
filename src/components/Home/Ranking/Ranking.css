@@ -12,23 +12,77 @@
     transition: .3s ease;
 }
 
-.Rank-ChildContainer:hover .Rank-bg{
+.Rank-ChildContainer:hover .Rank-bg {
     transform: scale(1.3);
 }
+
+.Rank-ChildContainer:hover .Rank-Avatar {
+    opacity: 70%;
+}
+
+.Rank-ChildContainer:hover .Icon-Rank {
+    opacity: 40%;
+}
+
+.Rank-ChildContainer:hover .Rank-ChildContainer2-Underline:after {
+    transform: scaleX(1);
+}
+
 .Rank-ChildContainer:hover {
     border: .5rem solid white;
 }
 
 .Rank-ChildContainer2 {
     position: absolute;
+    display: inline-block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-size: 3rem;
+    color: white;
 }
+
+.Rank-ChildContainer2-Underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: .2rem;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0.25turn, rgba(0,0,0,0), #fff, rgba(0,0,0,0));
+    transition: transform 0.25s ease-out;
+}
+
 
 .Rank-bg {
     width: inherit;
     height: inherit;
     transition: .3s ease;
 }
+
+.Rank-Avatar {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: 30rem;
+    height: 30rem;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+    transition: .5s ease;
+}
+
+.Icon-Rank {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: 10rem;
+    opacity: 0%;
+    transition: .5s ease;
+}
+
+
 

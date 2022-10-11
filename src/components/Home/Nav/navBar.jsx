@@ -24,88 +24,85 @@ const NavBar = () => {
 
     return(
         <>
-        <header className='container'>
-                <nav >
-                    <ul className='ul-navBar'>
+        <nav className='Navbar-Container'>
+            <ul className='ul-navBar'>
+                <li className='li-navBar'>
                     <audio id="theme">
                         <source src={Utils.theme} type="audio/mp3"/>
                         Your browser does not support the audio element.
                     </audio>
-                        <li className='li-navBar'>
+                    <img
+                        src={Utils.mute} 
+                        id='volume'
+                        name='volume'
+                        alt='volume img'
+                        onClick={Utils.volumeChanger}
+                        />
+                </li>
+                <li className='li-navBar'> 
+                    <Link  to="/">
                             <img
-                                src={Utils.mute} 
-                                id='volume'
-                                name='volume'
-                                alt='volume img'
-                                onClick={Utils.volumeChanger}
-                                />
-                        </li>
-                        <li className='li-navBar'> 
-                            <Link  to="/">
-                                    <img
-                                        id='img'
-                                        name='img'
-                                        src={Utils.logo} 
-                                        alt="Hashira Logo"  
-                                        className='logo'
-                                        onMouseOver={Utils.logoHover} 
-                                        onMouseOut={Utils.normalLogo}
-                                    />
-                            </Link> 
-                        </li>
-                        <li className='li-navBar'> 
-                            <Link 
-                                to='/Rankeds' 
-                                className='hover-underline-animation'
-                                >Rankeds
-                            </Link> 
-                        </li>
-                        <li className='li-navBar'> 
-                            <Link 
-                                to='/Playguide' 
-                                className='hover-underline-animation'
-                                >Playguide
-                            </Link> 
-                        </li>
-                        <li className='li-navBar'> 
-                            <Link 
-                                to='/Game' 
-                                className='hover-underline-animation'
-                                >Game
-                            </Link> 
-                        </li>
-                        <li className='li-navBar'> 
-                            <Link 
-                                to='/Donation' 
-                                className='hover-underline-animation'
-                                >Donation
-                            </Link> 
-                        </li>
-                        <li className='li-navBar'> 
-                            <Link 
-                                to='/Support' 
-                                className='hover-underline-animation'
-                                >Support
-                            </Link> 
-                        </li>
-                    </ul>
-                </nav>
-            <div className='grid-container '>
-            
-                <button 
-                    className='grid-item box-effect loginButton' 
-                    onClick={handleClickLogin}
-
-                >
-                    Login <AiOutlineUser />
-                </button>
-
-                <a  className='grid-item box-effect' 
-                   href="https://drive.google.com/u/0/uc?id=1x3W6W9N0MD19-rNzbCCmFVj3j5X3vSKY&export=download&confirm=t&uuid=05abb873-5ef0-41fa-b496-b158cc0a9"
-                >Download <BsDownload /></a>
-
-            </div>
-    </header>
+                                id='img'
+                                name='img'
+                                src={Utils.logo} 
+                                alt="Hashira Logo"  
+                                className='Navbar-Logo'
+                                onMouseOver={Utils.logoHover} 
+                                onMouseOut={Utils.normalLogo}
+                            />
+                    </Link> 
+                </li>
+                <li className='li-navBar'> 
+                    <Link 
+                        to='/Rankeds' 
+                        className='hover-underline-animation-Navbar'
+                        >Rankeds
+                    </Link> 
+                </li>
+                <li className='li-navBar'> 
+                    <Link 
+                        to='/Playguide' 
+                        className='hover-underline-animation-Navbar'
+                        >Playguide
+                    </Link> 
+                </li>
+                <li className='li-navBar'> 
+                    <Link 
+                        to='/Game' 
+                        className='hover-underline-animation-Navbar'
+                        >Game
+                    </Link> 
+                </li>
+                <li className='li-navBar'> 
+                    <Link 
+                        to='/Donation' 
+                        className='hover-underline-animation-Navbar'
+                        >Donation
+                    </Link> 
+                </li>
+                <li className='li-navBar'> 
+                    <Link 
+                        to='/Support' 
+                        className='hover-underline-animation-Navbar'
+                        >Support
+                    </Link> 
+                </li>
+            </ul>
+            <ul className='ul-navBar-buttons'>
+                <li className='li-navBar-button '>
+                    <button className='Navbar-Button Navbar-Box-Effect' 
+                            onClick={handleClickLogin}
+                            >Login <AiOutlineUser />
+                    </button>
+                </li>
+                <li className='li-navBar-button'>
+                    <a  className='Navbar-Button Navbar-Download Navbar-Box-Effect Button' 
+                        href="https://drive.google.com/u/0/uc?id=1x3W6W9N0MD19-rNzbCCmFVj3j5X3vSKY&export=download&confirm=t&uuid=05abb873-5ef0-41fa-b496-b158cc0a9"
+                        >Download <BsDownload className='Navbar-BsDownload'/>
+                    </a>
+                </li>
+            </ul>
+    </nav>
     {handleLogin && <Login 
                         handleClickLogin={handleClickLogin} 
                         handleClickRegister={handleClickRegister}

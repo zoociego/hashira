@@ -1,63 +1,40 @@
-.container {
-   
+.Navbar-Container {
     position: absolute;
     width: 100%;
-    display: flex;
+    height: 12vh;
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.grid-container {
-   
-    position: inherit;
-    color: #FFF;
-    display: grid;
-    grid-template-columns: 15rem 13rem;
-    height: 100%;
-    top: 0;
-    right: 0;
-    
-}
-.grid-item {
-    width: 100%;
-    height: 100%;
-    color: #FFF;
-    font-size: large;
-    padding-top: 2rem;
-    text-align: center;
-    text-decoration: none;
-}
-
-.logo {
-   
-    margin-top: -1rem;
-    transition:  ease;
-    width: 12rem;
-}
-
 .ul-navBar {
-    display: flex;
+    display: inline-block;
+    position: relative;
+    height: inherit;
     margin-left: 5rem;
-    width: 100%;
-    height: 100%;
-    padding-top: 2rem;
 }
 
 .li-navBar {
+    display: flex;
+    align-items: center;
+    height: inherit;
     float: left;
-    margin-right: 2rem;
     list-style: none;
+    padding-left: 2rem;
 }
 
-.hover-underline-animation {
+.Navbar-Logo {
+    width: 12rem;
+}
+
+.hover-underline-animation-Navbar {
     position: relative;
     color: #FFF;
     text-decoration: none;
 }
   
-  .hover-underline-animation:after {
+  .hover-underline-animation-Navbar:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -70,33 +47,55 @@
     transition: transform 0.25s ease-out;
   }
   
-    .hover-underline-animation:hover:after {
+    .hover-underline-animation-Navbar:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
     }
 
-.loginButton {
-    text-align: center;
-    background-color: transparent;
-    border: none;
-    padding: 1rem
+.ul-navBar-buttons {
+    position: relative;
+    height: inherit;
+    float:right;
+}
+.li-navBar-button {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    width: 15rem;
+    float: left;
+    list-style: none;
 }
 
-.box-effect {
-    transition: background-color 0.3s;
+.Navbar-Button {
+    background-color: transparent;
+    border: none;
+    height: inherit;
+    width: inherit;
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+}
+
+.Navbar-Box-Effect {
+    transition: 0.3s ease;
     cursor: pointer;
 }
 
-.box-effect:hover {
+.Navbar-Box-Effect:hover {
     background-color: #fff;
     border-color: transparent;
     color: #444;
 }
 
+.Navbar-Download {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
 
-
-
-
+.Navbar-BsDownload {
+    margin-left: .5rem;
+}
 
 
 

@@ -1,0 +1,11 @@
+.Home-Share-Container {
+    position: fixed;
+    display: flex;
+    right: 0;
+    top: 30%;
+    color: white;
+    padding: 2rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    pointer-events: none;
+}
