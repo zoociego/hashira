@@ -1,5 +1,7 @@
 import './Login.css';
 import { AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
+
 
 const Login = (props) => {
     return(
@@ -9,7 +11,7 @@ const Login = (props) => {
             <AiOutlineClose className="exit" onClick={props.handleClickLogin}/>
                 <form action='../Home.jsx' className="Form" method="post">
                     <p className="Login">Iniciar sesión</p>
-                    <input type="text" className="User input" placeholder='Username' />
+                    <input type="text" className="User input" placeholder= 'Username' />
                     <input type="password" className="Password input" placeholder='Password' />
                     <div >
                         <input type="submit" className="button input" value="Iniciar sesión" />

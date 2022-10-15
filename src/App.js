@@ -1,5 +1,6 @@
 import Home from './components/Home/Home.jsx'
 import News from './components/News/News.jsx'
+import Information from './components/Information/Information.jsx'
 import {
   Routes,
   Route
@@ -16,6 +17,10 @@ function App() {
           <Route 
             path='/News' 
             element={<News/>}>
+          </Route>
+          <Route 
+            path='/Information' 
+            element={<Information/>}>
           </Route>
         </Routes> 
       </>
