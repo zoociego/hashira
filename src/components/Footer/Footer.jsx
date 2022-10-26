@@ -1,5 +1,5 @@
 import './Footer.css'
-import Utils from '../../../utils/Utils.jsx';
+import Utils from '../../utils/Utils.jsx';
 
 const Footer = () => {
     return(

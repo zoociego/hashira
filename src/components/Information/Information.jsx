@@ -1,5 +1,3 @@
-import NavBar from '../Home/Nav/navBar.jsx';
-import Footer from '../Home/Footer/Footer.jsx';
 import Aos from "aos";
 import React, { useEffect } from "react";
 import "aos/dist/aos.css"
@@ -77,8 +75,6 @@ const Information = () => {
                 
             </div>    
         </div>
-        <NavBar />
-        <Footer />
         </>
         
     );
