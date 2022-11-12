@@ -1,14 +1,15 @@
 import './Ranking.css'
+import React from 'react'
 import avatar from '../../../assets/avatar.png'
 import iconRank from '../../../assets/iconRank.png'
 
 const Ranking = () => {
-    return(
+  return (
         <div className='Rank-Container'>
             <div className='Rank-ChildContainer'>
-                <img    src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg" 
+                <img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg"
                         alt="backgroud-Ranking"
-                        className='Rank-bg' 
+                        className='Rank-bg'
                 />
                 <img src={iconRank}
                     alt='iconRank'
@@ -23,9 +24,9 @@ const Ranking = () => {
                 </div>
             </div>
             <div className='Rank-ChildContainer'>
-                <img    src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg" 
+                <img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg"
                         alt="backgroud-Ranking"
-                        className='Rank-bg' 
+                        className='Rank-bg'
                 />
                 <img src={iconRank}
                     alt='iconRank'
@@ -40,9 +41,9 @@ const Ranking = () => {
                 </div>
             </div>
             <div className='Rank-ChildContainer'>
-                <img    src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg" 
+                <img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg"
                         alt="backgroud-Ranking"
-                        className='Rank-bg' 
+                        className='Rank-bg'
                 />
                 <img src={iconRank}
                     alt='iconRank'
@@ -57,7 +58,7 @@ const Ranking = () => {
                 </div>
             </div>
         </div>
-    )
+  )
 }
 
-export default Ranking;
+export default Ranking

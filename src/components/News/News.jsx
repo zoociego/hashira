@@ -1,9 +1,10 @@
-import NavBar from '../Home/Nav/navBar.jsx';
-import Layout from '../Home/Layout/Layout.jsx';
-import './News.css';
+import NavBar from '../Home/Nav/navBar.jsx'
+import Layout from '../Home/Layout/Layout.jsx'
+import React from 'react'
+import './News.css'
 
 const News = () => {
-    return(
+  return (
         <>
         <Layout />
         <div className='ContenedorPrincipal'>
@@ -33,7 +34,7 @@ const News = () => {
                         <span className='Notice'>Noticias</span>
                     </div>
                 </li>
-                
+
                 <li className='Containers'>
                     <div className='ContainerImage'><img alt='a' className='Noticebg' src="https://wallpapercrafter.com/th800/132962-Hytale-RPG-video-games-video-game-art.jpg"/></div>
                     <a className='title'>
@@ -56,18 +57,15 @@ const News = () => {
             </div>
             <br />
             <br />
-            
+
         </div>
         <div className='news'>
             </div>
-        
+
         <NavBar />
         </>
-        
-    )
+
+  )
 }
 
-export default News;
-        
- 
-
+export default News

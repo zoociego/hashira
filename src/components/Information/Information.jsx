@@ -1,13 +1,13 @@
-import Aos from "aos";
-import React, { useEffect } from "react";
-import "aos/dist/aos.css"
-import './Information.css';
+import Aos from 'aos'
+import React, { useEffect } from 'react'
+import 'aos/dist/aos.css'
+import './Information.css'
 
 const Information = () => {
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    }, []);
-    return(
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+  return (
         <>
         <div className='infoContainer'>
             <div className='infobgContainer'>
@@ -16,13 +16,13 @@ const Information = () => {
                 </div>
 
                     <div className='welcomer'>
-                        <div data-aos="zoom-out-right" className='welcomerText'> 
+                        <div data-aos="zoom-out-right" className='welcomerText'>
                             Hashira is a free MMORPG that seeks to bring you the best and most fun renewal experience possible. With us you can enjoy a multitude of official Instances. We work hard on our updates and pride ourselves on being able to offer something for everyone.
                         </div>
 
                         <div data-aos="fade-right" >
                             <img className='welcomerImage' src="https://cdn.discordapp.com/attachments/951299833598201916/1030008271412666448/archer-white.png"/>
-                        </div> 
+                        </div>
                     </div>
 
                     <div className='elemental'>
@@ -33,7 +33,7 @@ const Information = () => {
                         <div className='elementalText'>
                             <div data-aos="zoom-out-left">
                             Elemental Server
-                            Quest +300 
+                            Quest +300
                             Costumes +200
                             Items Vip +100
                             </div>
@@ -44,7 +44,7 @@ const Information = () => {
                         <div className='levelText'>
                             <div data-aos="zoom-out-right">
                             Max Base Lvl: 255
-                            Max Job Lvl: 130 
+                            Max Job Lvl: 130
                             </div>
                         </div>
                         <div data-aos="fade-right">
@@ -60,7 +60,7 @@ const Information = () => {
                         <div className='rateText'>
                             <div data-aos="zoom-out-left">
                             Rates: 130/130/100
-                            Drop mvp 0.01 
+                            Drop mvp 0.01
                             Drop Mini Boss 0.01
                             Drop Card Normal : 2%
                             </div>
@@ -72,12 +72,12 @@ const Information = () => {
                             <p href="/" className='welcomeImage'></p>
                         </div>
                     </div>
-                
-            </div>    
+
+            </div>
         </div>
         </>
-        
-    );
-};
+
+  )
+}
 
 export default Information

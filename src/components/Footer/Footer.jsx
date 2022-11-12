@@ -1,23 +1,24 @@
+import React from 'react'
 import './Footer.css'
-import Utils from '../../utils/Utils.jsx';
+import Utils from '../../utils/Utils.jsx'
 
 const Footer = () => {
-    return(
-        <div  className='Footer-Container'>
+  return (
+        <div className='Footer-Container'>
             <div>
-                <img    src={Utils.logo} 
+                <img src={Utils.logo}
                         alt="logo"
                         className='Footer-Logo'
                 />
             </div>
             <div className='Information-Buttons'>
-                <a  className='Information-Buttons-text' 
+                <a className='Information-Buttons-text'
                     href=""
                 >Privacy Policy</a>
-                <a  className='Information-Buttons-text' 
+                <a className='Information-Buttons-text'
                     href=""
                 >About us</a>
-                <a  className='Information-Buttons-text' 
+                <a className='Information-Buttons-text'
                     href=""
                 >Contact us</a>
             </div>
@@ -29,7 +30,7 @@ const Footer = () => {
                 <p>Copyright © HASHIRA-RO. All Rights Reserved.</p>
             </div>
         </div>
-    )
+  )
 }
 
-export default Footer;
+export default Footer

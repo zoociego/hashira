@@ -1,3 +1,4 @@
+import React from 'react'
 import Home from './components/Home/Home.jsx'
 import News from './components/News/News.jsx'
 import Information from './components/Information/Information.jsx'
@@ -7,33 +8,33 @@ import Footer from './components/Footer/Footer.jsx'
 import {
   Routes,
   Route
-} from "react-router-dom";
+} from 'react-router-dom'
 
-function App() {
-    return (
+function App () {
+  return (
       <>
         <Routes>
-          <Route 
-            path='/News' 
+          <Route
+            path='/News'
             element={<News />}>
           </Route>
-          <Route 
-            path='/Donation' 
+          <Route
+            path='/Donation'
             element={<Donation />}>
           </Route>
-          <Route 
-            path='/Information' 
+          <Route
+            path='/Information'
             element={<Information/>}>
           </Route>
-          <Route 
-            path='/' 
+          <Route
+            path='/'
             element={<Home />}>
           </Route>
         </Routes>
         <NavBar />
-        <Footer /> 
+        <Footer />
       </>
-  );
+  )
 }
 
-export default App;
+export default App

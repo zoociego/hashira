@@ -1,14 +1,14 @@
-import './Login.css';
+import { React } from 'react'
+import PropTypes from 'prop-types'
+import './Login.css'
 import { AiOutlineClose } from 'react-icons/ai'
-import { AiOutlineMail } from 'react-icons/ai'
 
-
-const Login = (props) => {
-    return(
+const Login = (handleClickLogin) => {
+  return (
     <>
         <div className='ContainerPrincipal'>
             <div className='ContainerSecundario'>
-            <AiOutlineClose className="exit" onClick={props.handleClickLogin}/>
+            <AiOutlineClose className="exit" onClick={handleClickLogin.handleClickLogin}/>
                 <form action='../Home.jsx' className="Form" method="post">
                     <p className="Login">Iniciar sesión</p>
                     <input type="text" className="User input" placeholder= 'Username' />
@@ -18,17 +18,26 @@ const Login = (props) => {
                         <br />
                         <br />
                         <a className="rememberpw" href='/'>Forgot your password</a>
-                        <button 
-                            className="Register" 
-                            onClick={props.handleClickRegister}
+                        <button
+                            className="Register"
+                            onClick={handleClickLogin.handleClickRegister}
                             >Register
                         </button>
                     </div>
                 </form>
             </div>
         </div>
-        
-    </>
-)}
 
-export default Login; 
+    </>
+  )
+}
+
+Login.defaultProps = {
+  handleClickLogin: false
+}
+
+Login.propTypes = {
+  handleClickLogin: PropTypes.bool
+}
+
+export default Login

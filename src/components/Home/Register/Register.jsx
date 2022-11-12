@@ -1,9 +1,10 @@
-import './Register.css';
+import './Register.css'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { AiOutlineClose } from 'react-icons/ai'
 
-
 const Register = (props) => {
-    return(
+  return (
     <>
         <div className='ContainerP'>
             <div className='ContainerS'>
@@ -16,12 +17,21 @@ const Register = (props) => {
                     <input type="password" className="confirmar input" placeholder='Confirm Password' />
                     <div >
                         <input type="submit" className="boton input" value="Registrarse" />
-                    </div>  
+                    </div>
                 </form>
             </div>
-        </div>   
+        </div>
     </>
-    
-)}
 
-export default Register; 
+  )
+}
+
+Register.defaultProps = {
+  handleClickRegister: false
+}
+
+Register.propTypes = {
+  handleClickRegister: PropTypes.bool
+}
+
+export default Register

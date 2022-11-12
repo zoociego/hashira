@@ -1,15 +1,16 @@
-import Share from './Share/Share.jsx';
-import Layout from './Layout/Layout.jsx';
+import React from 'react'
+import Share from './Share/Share.jsx'
+import Layout from './Layout/Layout.jsx'
 import Ranking from './Ranking/Ranking.jsx'
 
 const Home = () => {
-    return(
+  return (
         <>
             <Layout />
             <Ranking />
             <Share />
         </>
-    )
+  )
 }
 
-export default Home;
+export default Home

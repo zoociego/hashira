@@ -1,11 +1,10 @@
 import './Donation.css'
 
 const Donation = () => {
-    return(
+  return (
         <>
-            
         </>
-    )
+  )
 }
 
-export default Donation;
+export default Donation

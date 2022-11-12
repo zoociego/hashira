@@ -1,13 +1,13 @@
 import './Share.css'
-import { BsFacebook } from 'react-icons/bs';
-import { BsTwitter } from 'react-icons/bs';
+import React from 'react'
+import { BsFacebook, BsTwitter } from 'react-icons/bs'
 
 const Share = () => {
-    return(
+  return (
         <div className='Home-Share-Container'>
             <p>Share <BsTwitter /> <BsFacebook /></p>
         </div>
-    )
+  )
 }
 
-export default Share;
+export default Share
