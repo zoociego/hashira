@@ -13,6 +13,7 @@ import {
 function App () {
   return (
       <>
+      <NavBar />
         <Routes>
           <Route
             path='/News'
@@ -31,7 +32,6 @@ function App () {
             element={<Home />}>
           </Route>
         </Routes>
-        <NavBar />
         <Footer />
       </>
   )
