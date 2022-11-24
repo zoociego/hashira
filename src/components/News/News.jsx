@@ -1,4 +1,3 @@
-import NavBar from '../Home/Nav/navBar.jsx'
 import React from 'react'
 import './News.css'
 
@@ -60,7 +59,6 @@ const News = () => {
 
                 </div>
             </div>
-        <NavBar />
         </>
 
   )
