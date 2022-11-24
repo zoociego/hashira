@@ -1,23 +1,29 @@
+.Wallpaper{
+    height: 56rem;
+    width: 100%;
+    background-image: url("https://cdn.discordapp.com/attachments/991964785153413170/1043775942348255232/anime-ragnarok-online-devochka.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
 .ContenedorPrincipal {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Microsoft YaHei', 微软雅黑, 'MicrosoftJhengHei', 华文细黑, STHeiti, MingLiu;
-
-}
+    font-family: 'Microsoft YaHei', 微软雅黑, 'MicrosoftJhengHei', 华文细黑, STHeiti, MingLiu;}
 
 .ContenedorSecunario {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 30rem 30rem 30rem;
+    grid-template-columns: 25rem 25rem 25rem;
     grid-gap: 2rem;
-    
 }
 
 .Containers {
-    padding: 2rem;
-    padding-top: 2rem;
+    padding: 1.7rem;
+    padding-top: 1.7rem;
     background-color: rgba(18,18,18,0.8);
     border-radius: 4px;
     opacity: 0.9;
@@ -27,6 +33,10 @@
     transition: all 0.5s 0s ease;
     width: 100%;
     height: 100%;
+}
+
+.Noticebg:hover {
+    transform: scaleX(1);
 }
 
 .title {
@@ -45,10 +55,6 @@
     font-weight: normal;
     font-stretch: normal;
     line-height: 34px;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
     white-space: normal;
     max-height: 70px;
     margin: 10px 0;
@@ -58,13 +64,6 @@
     font-size: 1.01rem;
     line-height: 1.5rem;
     color: #fff;
-    overflow: hidden;
-    word-wrap: break-word;
-    white-space: normal;
-}
-
-.Foot {
-    text-align: center;
 }
 
 .date {
@@ -78,8 +77,15 @@
     float: right;
 }
 
-.categoryBox { 
-    
+.containerBox{
+    position: relative;
+    padding-right: 20%;
+    padding-left: 20%;
+    display: grid;
+    grid-gap: 1.4rem;
+}
+
+.categoryBox {
     list-style-type: none;
     display: grid;
     grid-template-columns: 14rem 14rem 14rem;
@@ -87,69 +93,19 @@
 }
 
 .Category {
-    line-height: 2.5rem;
     background-color: rgba(57,59,64,0.18);
     color: #393b40;
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
-    padding: 1px;
-    transition: all 0.2s 0s ease;
-}
-
-.bgbox {
-    background-color: #f5f5f5;
-    height: 2rem;
+    padding: 0.7rem;
 }
 
 .news {
-    position: relative;
-    min-height: 170px;
-    background-color: #fafafa;
-    padding: 15px 20px;
-    margin-bottom: 10px;
+    background-color: rgba(57,59,64,0.18);
     border-radius: 4px;
+    padding-top: 100%;
 }
 
-.newsContent{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    font-size: 24px;
-    color: #393b40;
-    background-color: #ffffff;
-}
 
-.newsImg {
-    width: 265px;
-    height: 140px;
-    margin-right: 20px;
-}
-
-.newsInfo {
-    width: calc(100% - 285px);
-}
-
-.newsDate {
-    position: absolute;
-    
-    bottom: 16px;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.newsDate div {
-    color: #999;
-}
-
-.newsDate a {
-    width: auto;
-    text-decoration: none;
-    cursor: pointer;
-    margin-left: 56px;
-    color: #ffc000;
-}
 
