@@ -14,7 +14,10 @@ const Login = (handleClickLogin) => {
                     <input type="text" className="User input" placeholder= 'Username' />
                     <input type="password" className="Password input" placeholder='Password' />
                     <div >
+                        <br />
+                        <br />
                         <input type="submit" className="button input" value="Iniciar sesión" />
+                        <br />
                         <br />
                         <br />
                         <a className="rememberpw" href='/'>Forgot your password</a>

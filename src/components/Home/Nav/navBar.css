@@ -1,11 +1,12 @@
 .Navbar-Container {
     position: absolute;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .ul-navBar {
@@ -13,6 +14,7 @@
     position: relative;
     height: inherit;
     margin-left: 5rem;
+    
 }
 
 .li-navBar {
@@ -25,10 +27,16 @@
 }
 
 .Navbar-Logo {
-    width: 12rem;
+    width: 10rem;
 }
 
 .hover-underline-animation-Navbar {
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.dropdown-position {
     position: relative;
     color: #FFF;
     text-decoration: none;
@@ -96,6 +104,3 @@
 .Navbar-BsDownload {
     margin-left: .5rem;
 }
-
-
-

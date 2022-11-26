@@ -6,6 +6,7 @@ import { BsDownload } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import Login from '../Login/Login.jsx'
 import Register from '../Register/Register'
+import Dropdown from '../Dropdown/Dropdown.jsx'
 
 const NavBar = () => {
   const [handleLogin, setHandleLogin] = useState(false)
@@ -66,11 +67,10 @@ const NavBar = () => {
                     </Link>
                 </li>
                 <li className='li-navBar'>
-                    <Link
-                        to='/Game'
-                        className='hover-underline-animation-Navbar'
-                        >Game
-                    </Link>
+                    <p
+                        className='dropdown-position'
+                        ><Dropdown />
+                    </p>
                 </li>
                 <li className='li-navBar'>
                     <Link

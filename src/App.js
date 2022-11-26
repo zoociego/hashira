@@ -5,6 +5,7 @@ import Information from './components/Information/Information.jsx'
 import Donation from './components/Donation/Donation.jsx'
 import NavBar from './components/Home/Nav/navBar.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import Error404 from './components/Error404/Error404.jsx'
 import {
   Routes,
   Route
@@ -13,8 +14,12 @@ import {
 function App () {
   return (
       <>
-      <NavBar />
+        <NavBar />
         <Routes>
+          <Route
+            path='/'
+            element={<Home />}>
+          </Route>
           <Route
             path='/News'
             element={<News />}>
@@ -25,11 +30,11 @@ function App () {
           </Route>
           <Route
             path='/Information'
-            element={<Information/>}>
+            element={<Information />}>
           </Route>
           <Route
-            path='/'
-            element={<Home />}>
+            path='*'
+            element={<Error404 />}>
           </Route>
         </Routes>
         <Footer />

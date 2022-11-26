@@ -1,0 +1,39 @@
+.dropdown-name {
+    padding: 2.5rem 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.containerMenu {
+    position: absolute;
+    top: 6.17rem;
+    left: -1rem;
+    list-style-type: none;
+    z-index: 5;
+    
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.dropdown-menu:hover {
+    background-color: rgba(31, 31, 31, 0.7);
+}
+
+.dropdown-options {
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.dropdown-icon {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 0.7rem;
+}

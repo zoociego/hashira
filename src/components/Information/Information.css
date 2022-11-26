@@ -10,7 +10,6 @@ h1 {
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    z-index: 0;
 }
 
 .infobgContainer {
@@ -22,7 +21,6 @@ h1 {
     background-position-x: center;
     background-position-y: center;
     border: solid 1px black;
-    z-index: 1;
 }
 
 .tittleContainer {
