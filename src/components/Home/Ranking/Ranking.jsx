@@ -7,10 +7,9 @@ const Ranking = () => {
   return (
         <div className='Rank-Container'>
             <div className='Rank-ChildContainer'>
-                <img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg"
-                        alt="backgroud-Ranking"
-                        className='Rank-bg'
-                />
+                <div
+                    className='first-Rank-bg'
+                ></div>
                 <img src={iconRank}
                     alt='iconRank'
                     className='Icon-Rank'
@@ -24,10 +23,9 @@ const Ranking = () => {
                 </div>
             </div>
             <div className='Rank-ChildContainer'>
-                <img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg"
-                        alt="backgroud-Ranking"
-                        className='Rank-bg'
-                />
+                <div
+                    className='second-Rank-bg'
+                ></div>
                 <img src={iconRank}
                     alt='iconRank'
                     className='Icon-Rank'
@@ -41,10 +39,9 @@ const Ranking = () => {
                 </div>
             </div>
             <div className='Rank-ChildContainer'>
-                <img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210720/2021072015230536749.jpg"
-                        alt="backgroud-Ranking"
-                        className='Rank-bg'
-                />
+                <div
+                    className='third-Rank-bg'
+                ></div>
                 <img src={iconRank}
                     alt='iconRank'
                     className='Icon-Rank'

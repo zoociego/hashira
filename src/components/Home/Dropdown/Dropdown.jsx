@@ -16,7 +16,7 @@ function dropdown () {
         <>
             <div className="dropdown">
                 <p className="dropdown-name" onMouseEnter={showDropdown} onMouseLeave={hideDropdown} >
-                    <li className='hover-underline-animation-Navbar'>Game</li> <li className='dropdown-icon'><BsCaretDownFill /></li>
+                    <li className='hover-underline-animation-Navbar'>Game</li><li className='dropdown-icon'><BsCaretDownFill /></li>
                     {state
                       ? (<ul onMouseEnter={showDropdown}>
                         <div className='containerMenu'>

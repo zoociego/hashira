@@ -56,10 +56,34 @@
 }
 
 
-.Rank-bg {
+.first-Rank-bg {
     width: inherit;
     height: inherit;
     transition: .3s ease;
+    background-image: url("https://cdn.discordapp.com/attachments/768312947687555072/1046453279967674458/1123013_1.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 25rem;
+}
+
+.second-Rank-bg {
+    width: inherit;
+    height: inherit;
+    transition: .3s ease;
+    background-image: url("https://cdn.discordapp.com/attachments/768312947687555072/1046453279967674458/1123013_1.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 25rem;
+}
+
+.third-Rank-bg {
+    width: inherit;
+    height: inherit;
+    transition: .3s ease;
+    background-image: url("https://cdn.discordapp.com/attachments/768312947687555072/1046453279967674458/1123013_1.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 25rem;
 }
 
 .Rank-Avatar {
